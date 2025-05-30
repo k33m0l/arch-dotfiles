@@ -5,4 +5,4 @@ cp $HOME/.config/hypr/hyprland.conf ./hyprland/hyprland.conf
 cp $HOME/.config/hypr/hyprpaper.conf ./hyprland/hyprpaper.conf
 
 echo 'Fetch Wallpapers'
-cp $HOME/Pictures/Wallpapers/rei_blue.png ./wallpaper/rei_blue.png
+cp $HOME/Pictures/Wallpapers/*.png ./wallpaper/
