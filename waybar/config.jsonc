@@ -20,6 +20,7 @@
 
     "modules-center": [
         "clock",
+        "custom/separator#line",
 	"hyprland/workspaces#kanji",
     ],
 

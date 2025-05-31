@@ -16,5 +16,11 @@
 			"today": "<span color='#ff6699'><b><u>{}</u></b></span>"
 		}
 	}
-    }
+    },
+
+    "custom/separator#line": {
+        "format": "|",
+        "interval": "once",
+        "tooltip": false,
+    },
 }
