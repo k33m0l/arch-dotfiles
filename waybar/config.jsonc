@@ -1,0 +1,29 @@
+{
+    "include": [
+        "$HOME/.config/waybar/modules/Common",
+        "$HOME/.config/waybar/modules/Hyprland",
+    ],
+    "layer": "top",
+    "exclusive": true,
+    "passthrough": false,
+    "position": "top",
+    "spacing": 3,
+    "fixed-center": true,
+    "ipc": true,
+    "margin-top": 3,
+    "margin-left": 8,
+    "margin-right": 8,
+
+    "modules-left": [
+
+    ],
+
+    "modules-center": [
+        "clock",
+	"hyprland/workspaces#kanji",
+    ],
+
+    "modules-right": [
+
+    ],
+}
