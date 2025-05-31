@@ -5,6 +5,7 @@
 
 @define-color color_blue #2414d0;
 @define-color color_light_blue #215cde;
+@define-color color_cyan #24b7db;
 @define-color color_grey #524d51;
  
 * {
@@ -43,7 +44,7 @@ window#waybar.empty #window {
 
 #workspaces {
     border-width: 2px;
-    border-color: @color_blue;
+    border-color: @color_cyan;
     border-style: solid;
     border-radius: 10px;
     background: @color_grey;
@@ -82,7 +83,7 @@ window#waybar.empty #window {
 
 #taskbar button:hover,
 #workspaces button:hover {
-    color: @color_blue;
+    color: @color_cyan;
     padding-left: 2px;
     padding-right: 8px;
     animation: gradient_f 20s ease-in infinite;
@@ -103,7 +104,11 @@ window#waybar.empty #window {
 	color: @foreground;
 	background: @color_grey;
     border-width: 2px;
-    border-color: @color_blue;
+    border-color: @color_cyan;
     border-style: solid;
+}
+
+#custom-separator{
+    color: white;
 }
 
