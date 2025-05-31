@@ -3,7 +3,9 @@
 @define-color background-alt rgba(28,21,25,0.25);
 @define-color cursor #C295AE;
 
+@define-color color_blue #2414d0;
 @define-color color_light_blue #215cde;
+@define-color color_grey #524d51;
  
 * {
     font-family: "JetBrainsMono Nerd Font";
@@ -35,15 +37,23 @@ window#waybar.empty #window {
 	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
-    color: transparent;
+	color: transparent;
 	background: transparent;
+}
+
+#workspaces {
+    border-width: 2px;
+    border-color: @color_blue;
+    border-style: solid;
+    border-radius: 10px;
+    background: @color_grey;
 }
 
 #taskbar button,
 #workspaces button {
     color: @foreground;
     box-shadow: none;
-	text-shadow: none;
+    text-shadow: none;
     padding: 0px;
     border-radius: 9px;
     padding-left: 4px;
@@ -54,17 +64,15 @@ window#waybar.empty #window {
 
 #taskbar button.active,
 #workspaces button.active {
-    color: @color_light_blue;
+    color: @color_blue;
     background-color: @foreground;
-    padding-left: 4px;
-    padding-right: 8px;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
 #taskbar button.focused,
 #workspaces button.focused {
-    color: @color_light_blue;
+    color: @color_blue;
 }
 
 #workspaces button.urgent {
@@ -74,7 +82,7 @@ window#waybar.empty #window {
 
 #taskbar button:hover,
 #workspaces button:hover {
-    color: @color_light_blue;
+    color: @color_blue;
     padding-left: 2px;
     padding-right: 8px;
     animation: gradient_f 20s ease-in infinite;
@@ -82,6 +90,9 @@ window#waybar.empty #window {
 }
 
 #workplaces,
+#workplaces button,
+#taskbar,
+#taskbar button,
 #clock{
 	padding-top: 4px;
 	padding-bottom: 4px;
@@ -90,9 +101,9 @@ window#waybar.empty #window {
 	border-radius: 10px;
 	transition: none;
 	color: @foreground;
-	background: @color_light_blue;
+	background: @color_grey;
     border-width: 2px;
-    border-color: @color_light_blue;
+    border-color: @color_blue;
     border-style: solid;
 }
 
